@@ -1,9 +1,13 @@
-<script>
-	let name = ['existing option'];
-</script>
 
-<h1>Refresh to reset</h1>
-<h1>{JSON.stringify(name)}</h1>
-Try click on these:
-<input type="checkbox" value="no" bind:group={name}>
-<input type="checkbox" value="yes" bind:group={name}>
+{#each menu as flavour}
+	<Flavour {flavour}/>
+{/each}
+
+<script>
+	import Flavour from "./Flavour.svelte"
+	let menu = [
+		'Cookies and cream',
+		'Mint choc chip',
+		'Raspberry ripple'
+	];
+</script>
