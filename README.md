@@ -1,6 +1,7 @@
 the setup
 
 ```
-git clone --branch svelte@5.0.0-next.110 https://github.com/sveltejs/svelte
+git clone --branch patch-5 https://github.com/iacore/svelte
+
 pnpm link svelte/packages/svelte
 ```
