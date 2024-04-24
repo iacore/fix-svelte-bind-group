@@ -1,6 +1,5 @@
-
 {#each menu as flavour}
-	<Flavour {flavour}/>
+	<Flavour {flavour} bind:group={selection} />
 {/each}
 
 <script>
@@ -10,4 +9,6 @@
 		'Mint choc chip',
 		'Raspberry ripple'
 	];
+        let selection = [];
+        $: console.log(selection)
 </script>
